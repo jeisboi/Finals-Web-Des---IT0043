@@ -1,4 +1,3 @@
-
 *{
     margin:0;
     padding:0;
@@ -7,7 +6,6 @@
 body{
     background: #080808;
     color: #ffff;
-
 }
 #header {
     width: 100%;
@@ -45,7 +43,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #5B18C2;
+    background: #5b18C2;
     position: absolute;
     transition: 0.3s;
     left: 0;
@@ -68,7 +66,33 @@ nav ul li a:hover::after{
 }
 .header-text h1 span {
     color: white;
-    text-decoration: underline ;
+    text-decoration: underline #5b18C2 ;
+}
+/* ========jump top======== */
+
+.jump-to-top{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: fixed;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+    i{
+        color: black;
+        font-size: 20px;
+    }
+}
+.jump-to-top.show{
+    opacity: 1;
+    pointer-events: all;
 }
 
 /*========about section========*/
@@ -94,10 +118,10 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 80px;
     font-weight: 800;
-    color: #5B18C2;
+    color: #5b18C2;
 }
 .myDesc {
-    color: rgb(168, 168, 168);
+    color: rgb(255, 255, 255);
     font-size: 17px;
     text-align: justify;
     text-shadow: 3px  #ffff;
@@ -105,6 +129,7 @@ nav ul li a:hover::after{
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+    color: #5b18c2;
 }
 .tab-links {
     margin-right: 150px;
@@ -131,7 +156,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #5B18C2;
+    color: #5b18C2;
     font-size: 14px;
 }
 .tab-contents {
@@ -152,4 +177,55 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-bottom: 50px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #232323;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list h2{
+    color: whitesmoke;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.services-list div p {
+    font-size: 18px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #3300ff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.services-list div:hover {
+    background-color: #45178a;
+    transform: translateY(-10px);
+}
+
+/* ========portfolio======== */
+
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
 }
