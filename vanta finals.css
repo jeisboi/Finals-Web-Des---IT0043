@@ -504,5 +504,11 @@ a:link,a:active,a:visited,a:hover{
     font-weight: 300;
     margin-top: 20px;
 }
-
+#msg{
+    color: rgb(31, 248, 2);
+    margin-top: -90px;
+    display: block;
+    font-family: poppins;
+}
 /* ===small screen=== */
+
